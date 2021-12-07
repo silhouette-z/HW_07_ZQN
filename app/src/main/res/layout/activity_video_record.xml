@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"/>
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/image_info"
+        android:text="image_info"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/change_camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/changeuse"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:background="#00000000"/>
+
+
+        <ImageButton
+            android:id="@+id/work_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/take"
+            android:scaleType="fitCenter"
+            android:background="#00000000"
+            android:text="Start Recording"/>
+
+        <ImageView
+            android:id="@+id/small_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
